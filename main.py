@@ -4,7 +4,7 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import  ChatPromptTemplate
 
 
-from dotenv import load_dotenv # loading keys
+# from dotenv import load_dotenv # loading keys
 # load_dotenv()
 # Load the config file
 config = toml.load("config.toml")
