@@ -7,7 +7,7 @@ from langchain_core.prompts import  ChatPromptTemplate
 # from dotenv import load_dotenv # loading keys
 # load_dotenv()
 # Load the config file
-config = toml.load("config.toml")
+config = toml.load("secrets.toml")
 
 # Access the API key
 api_key = config["api"]["key"]
