@@ -7,10 +7,12 @@ from langchain_core.prompts import  ChatPromptTemplate
 # from dotenv import load_dotenv # loading keys
 # load_dotenv()
 # Load the config file
-config = toml.load("secrets.toml")
+# config = toml.load("secrets.toml")
+
 
 # Access the API key
-api_key = config["api"]["key"]
+# api_key = config["api"]["key"]
+GROQ_API_KEY = st.secrets["api"]["groq_key"]
 # print(api_key)
 
 st.markdown(
@@ -51,7 +53,7 @@ button = st.button("Translate")
 # intitalize models 
 
 #models 
-groq =  ChatGroq(model="llama-3.3-70b-versatile")
+groq =  ChatGroq(model="llama-3.3-70b-versatile", api_key=GROQ_API_KEY)
 
 # result =  groq.invoke("What is the most spoken language?")
 # st.write(result.content)
