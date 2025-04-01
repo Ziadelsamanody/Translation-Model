@@ -1,10 +1,17 @@
 import streamlit as st
+import toml
 from langchain_groq import ChatGroq
 from langchain_core.prompts import  ChatPromptTemplate
 
 
 from dotenv import load_dotenv # loading keys
-load_dotenv()
+# load_dotenv()
+# Load the config file
+config = toml.load("config.toml")
+
+# Access the API key
+api_key = config["api"]["key"]
+print(api_key)
 
 st.markdown(
     "<h1 style =' color: Green'> Collabry Translation Model </h1>",
