@@ -12,7 +12,7 @@ from langchain_core.prompts import  ChatPromptTemplate
 
 # Access the API key
 # api_key = config["api"]["key"]
-GROQ_API_KEY = st.secrets["api"]["groq_key"]
+GROQ_API_KEY = st.secrets["api"]["key"]
 # print(api_key)
 
 st.markdown(
