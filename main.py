@@ -11,7 +11,7 @@ config = toml.load("config.toml")
 
 # Access the API key
 api_key = config["api"]["key"]
-print(api_key)
+# print(api_key)
 
 st.markdown(
     "<h1 style =' color: Green'> Collabry Translation Model </h1>",
