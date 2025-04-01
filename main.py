@@ -71,7 +71,7 @@ prompt = templete.invoke({
     "text" : text_to_translate
 })
 
-st.write(prompt)
+# st.write(prompt)
 
 # invoke texts to pompt
 # result = groq.invoke(prompt)
