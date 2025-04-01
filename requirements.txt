@@ -2,4 +2,3 @@ langchain_groq
 streamlit
 langchain_core
 toml
-requirement
